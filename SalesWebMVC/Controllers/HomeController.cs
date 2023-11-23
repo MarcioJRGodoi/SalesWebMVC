@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SalesWebMVC.Models;
+using SalesWebMVC.Models.ViewModel;
 using System.Diagnostics;
 
 namespace SalesWebMVC.Controllers
@@ -20,6 +21,13 @@ namespace SalesWebMVC.Controllers
 
         public IActionResult Privacy()
         {
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            ViewData["Message"] = "Salles Web MVC Aplication";
+            ViewData["Aluno"] = "Marcio De Godoi";
             return View();
         }
 
