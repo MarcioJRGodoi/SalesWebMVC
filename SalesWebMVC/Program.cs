@@ -12,7 +12,9 @@ builder.Services.AddDbContext<SalesWebMVCContext>(options =>
 
 builder.Services.AddScoped<SalesWebMVCContext>();
 builder.Services.AddScoped<SellerService>();
+builder.Services.AddScoped<DepartmentService>();
 builder.Services.AddTransient<SeedingService>();
+
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
